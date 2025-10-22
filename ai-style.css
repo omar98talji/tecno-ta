@@ -1,0 +1,263 @@
+body {
+    font-family: "Tajawal", Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #3b454b;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+header {
+    background: linear-gradient(to right, #29b6a6, #29b6a6);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #0d6efd;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+article {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 28px;
+    color: #222;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #29b6a6;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* أزرار وسائل التواصل الاجتماعي */
+.social-buttons {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.social-buttons p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-buttons a:hover {
+    background-color: #084298;
+    transform: scale(1.1);
+}
+
+/* --- تصميم متجاوب للشاشات الصغيرة --- */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    nav a {
+        display: block;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    article {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    article p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .hero img,
+    article img {
+        height: auto;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .social-buttons a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+}
+
+.social-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-buttons p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+/* شكل الأيقونات الدائرية */
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    margin: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+/* ألوان المنصات */
+.icon.fb {
+    background-color: #1877f2;
+}
+
+/* فيسبوك */
+.icon.ig {
+    background-color: #e1306c;
+}
+
+/* إنستجرام */
+
+/* التأثير عند تمرير الفأرة */
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+article+article {
+    border-top: 2px solid #eee;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+#contact ul li .icon {
+    margin-right: 10px;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+/* 🎨 ألوان مميزة لكل نوع من الأيقونات */
+.icon-mail {
+    color: #e63946;
+    /* أحمر للبريد */
+}
+
+.icon-phone {
+    color: #2ca02c;
+    /* أخضر للهاتف */
+}
+
+.icon-fb {
+    color: #1877f2;
+    /* أزرق للفيسبوك */
+}
+
+/* تأثير عند تمرير الفأرة */
+#contact ul li a:hover .icon {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
