@@ -260,4 +260,9 @@ article+article {
 #contact ul li a:hover .icon {
     transform: scale(1.2);
     transition: transform 0.3s ease;
-}
+
+} 
+body {
+  direction: rtl;
+  text-align: right;
+} 
